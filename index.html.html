@@ -13,7 +13,7 @@
             color: #363636;
         }
         header {
-            background-color: #3700ff;
+            background-color: #4CAF50;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -45,8 +45,8 @@
             box-shadow: 0 0 15px rgba(237, 0, 0, 0.1);
         }
         h2 {
-            color: #3700ff;
-            border-bottom: 2px solid #3700ff;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
             padding-bottom: 10px;
         }
         p {
@@ -90,6 +90,54 @@
         h3 {
             color: #000000;
         }
+        nav2 {
+            font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1 {
+                color: #333;
+            }
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            input[type="text"], input[type="email"], textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            .social {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .social a {
+                text-decoration: none;
+                color: #4CAF50;
+                font-size: 18px;
+            }
+            .social a:hover {
+                color: #333;
+            }
+
+        
     </style>
 </head>
 <body>
@@ -106,6 +154,7 @@
         <a href="#skills">Keterampilan</a>
         <a href="#interests">Minat</a>
         <a href="#contact">Kontak</a>
+        <a href="#hubme">Hubungi Kami</a>
     </nav>
 
     <main>
@@ -156,12 +205,36 @@
             </div>
         </section>
         <right><a href="#top">Back To Top!</a></right>
-        <section id="contact">
-            <h2>Kontak</h2>
-            <p>Anda dapat menghubungi saya melalui email di <a href="bakolkewan93@gmail.com">subektilove@gmail.com</a> atau mengunjungi profil Instagram saya di <a href="https://www.instagram.com/in/username" target="_blank">https://www.instagram.com/bomollawaok?igsh=MXBzMWFqdTM3aXU0dg== </a>.</p>
-        </section>
+        <h2>Kontak</h2>
+        <section id="contact" class="contact">
+            <h3>Sosmed</h3>
+            <div class="socialBtn">
+              <p><a href="https://x.com/SubektiRah91001?t=afJB3g5zfW72M9kG5Mh_iA&s=08" target="_blank">X</a></p>
+              <p><a href="https://www.instagram.com/bomollawaok/" target="_blank"> Instagram </a></p>
+              <p><a href="https://www.tiktok.com/@bomollawaokkkk?_t=8pe9SWWulN4&_r=1" target="_blank">TikTok</a></p>
+              <p><a href="https://www.youtube.com/@ArzuSaktimandraguna" target="_blank">Youtube</a></p>
+            </div>
+            <center><a href="#top">Back To Top!</a></center>
+          </section>
     </main>
-
+    <center><h2>Hubungi Kami</h2></center>
+    <section id="hubme" class="hubme">
+    <nav2>
+        <form action="submit_form.php" method="POST">
+            <label for="nama">Nama Anda:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            <label for="email">Email Anda:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            <label for="subjek">Subjek:</label>
+            <input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek pesan" required>
+            <label for="pertanyaan">Pertanyaan:</label>
+            <textarea id="pertanyaan" name="pertanyaan" rows="6" placeholder="Tuliskan pertanyaan Anda di sini..." required></textarea>
+            <input type="submit" value="Kirim">
+        </form>
+        <div class="social">
+        </section>
+        <center><a href="#top">Back To Top!</a></center>
+    </nav2>
     <footer>
         <p>&copy; 2024 [UzeraUhuy]. Jadilah orang yang bijaksana.</p>
     </footer>
